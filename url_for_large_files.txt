@@ -1,0 +1,1 @@
+https://lazyprogrammer.me/course_files/enwiki-preprocessed.zip this can be found at the bottom of page: https://deeplearningcourses.com/c/natural-language-processing-with-deep-learning-in-python
