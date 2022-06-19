@@ -69,7 +69,7 @@ def get_robert_frost():
     word2idx = {'START': 0, 'END': 1}
     current_idx = 2
     sentences = []
-    for line in open('../hmm_class/robert_frost.txt'):
+    for line in open('../hmm_class/robert_frost.txt', encoding="utf8"):
         line = line.strip()
         if line:
             tokens = remove_punctuation(line.lower()).split()
@@ -118,7 +118,7 @@ def get_wikipedia_data(n_files, n_vocab, by_paragraph=False):
 
     for f in input_files:
         print("reading:", f)
-        for line in open(prefix + f):
+        for line in open(prefix + f, encoding="utf8"):
             line = line.strip()
             # don't count headers, structured data, lists, etc...
             if line and line[0] not in ('[', '*', '-', '|', '=', '{', '}'):
@@ -188,7 +188,7 @@ def get_poetry_classifier_data(samples_per_class, load_cached=True, save_cached=
     Y = []
     for fn, label in zip(('../hmm_class/edgar_allan_poe.txt', '../hmm_class/robert_frost.txt'), (0, 1)):
         count = 0
-        for line in open(fn):
+        for line in open(fn, encoding="utf8"):
             line = line.rstrip()
             if line:
                 print(line)
@@ -223,7 +223,7 @@ def get_stock_data():
     line_counts = {}
     for f in input_files:
         n = 0
-        for line in open('stock_data/%s' % f):
+        for line in open('stock_data/%s' % f, encoding="utf8"):
             # pass
             n += 1
         line_counts[f] = n
@@ -247,7 +247,7 @@ def get_stock_data():
             binary_targets = []
             first = True
             last_price = 0
-            for line in open('stock_data/%s' % f):
+            for line in open('stock_data/%s' % f, encoding="utf8"):
                 if first:
                     first = False
                     continue

@@ -1,1 +1,19 @@
-https://lazyprogrammer.me/course_files/enwiki-preprocessed.zip this can be found at the bottom of page: https://deeplearningcourses.com/c/natural-language-processing-with-deep-learning-in-python
+# WIkipedia data
+# https://lazyprogrammer.me/course_files/enwiki-preprocessed.zip this can be found at the bottom of page: https://deeplearningcourses.com/c/natural-language-processing-with-deep-learning-in-python
+
+# Pretrained GLOVE
+# WHERE TO GET THE VECTORS:
+# GloVe: https://nlp.stanford.edu/projects/glove/
+# Direct link: http://nlp.stanford.edu/data/glove.6B.zip
+
+# Pretrained Word2Vec
+# warning: takes quite awhile
+# https://code.google.com/archive/p/word2vec/
+# direct link: https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing
+# 3 million words and phrases
+# D = 300
+
+
+-----------------------------
+using pip:
+py -m pip install gensim
